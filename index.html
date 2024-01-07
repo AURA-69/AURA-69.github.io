@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cod3xBot's Shop</title>
     <style>
       body {
@@ -16,7 +16,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh
       }
 
       #content {
@@ -24,28 +23,24 @@
         padding: 15px;
         border-radius: 10px;
         max-width: 600px;
-        width: 100%
+        width: 100%;
+        box-sizing: border-box;
       }
 
       h1 {
         font-size: 2em;
-        margin-bottom: 15px
+        margin-bottom: 15px;
       }
 
       p {
         font-size: 1.1em;
-        margin-bottom: 20px
-      }
-
-      #additional-text {
-        font-size: 1.1em;
-        margin-bottom: 15px
+        margin-bottom: 15px;
       }
 
       .donation-links {
         display: flex;
         flex-direction: column;
-        align-items: center
+        align-items: center;
       }
 
       .join-now-button,
@@ -56,7 +51,7 @@
         text-decoration: none;
         border-radius: 5px;
         margin: 8px;
-        font-size: 1em
+        font-size: 1em;
       }
 
       #goal-progress {
@@ -64,7 +59,7 @@
         width: 100%;
         background-color: #ddd;
         border-radius: 5px;
-        overflow: hidden
+        overflow: hidden;
       }
 
       #progress-bar {
@@ -73,33 +68,32 @@
         background-color: #4caf50;
         text-align: center;
         line-height: 15px;
-        color: #fff
+        color: #fff;
       }
 
       #total-goal {
         font-size: 1.1em;
-        margin-top: 8px
+        margin-top: 8px;
+      }
+
+      @media screen and (max-width: 600px) {
+        #content {
+          max-width: 100%;
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 1em;
+        }
       }
     </style>
   </head>
   <body>
     <div id="content">
-      <div id="additional-text">
-        <p>Please Visit My Guilded Server To Add This To Your Switch</p>
-        <p>If you appreciate the value of my content, consider making a cryptocurrency donation:</p>
-        <p>BTC Address: 1P4GBec8U8uJ7MEVL1ka6oYkcSZMrz3M7H</p>
-        <p>ETH Address: 0x66f11096a3779189dfc1d41e7453342576079469</p>
-        <p>LTC Address: MQX6cMcGM4Ck5sTjZF8uaPcbEDX7BAmtGW</p>
-        <p>BCH Address: bitcoincash:qpfwg92dvray6q9nywr3p9uettc50a709yn74r44lh</p>
-        <div style="display:flex;align-items:center;justify-content:center">
-          <p>Support me on Ko-fi:</p>
-          <a href="https://ko-fi.com/cod3xdev" target="_blank" style="margin-left:10px;margin-top:4px">
-            <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi" style="border:0;width:160px;height:30px">
-          </a>
-        </div>
-        <p>Subscribe to Guilded: <a href="https://www.guilded.gg/Cod3xDev/subscriptions" class="subscribe-button">Subscribe Now</a>
-        </p>
-      </div>
       <h1>Cod3xBot's Shop</h1>
       <p>Support our cause and make a difference.</p>
       <div class="donation-links">
@@ -109,11 +103,28 @@
         <div id="progress-bar">0%</div>
       </div>
       <div id="total-goal">Total Goal: $50 AUD</div>
+
+      <div id="additional-text">
+        <p>Please Visit My Guilded Server To Add This To Your Switch</p>
+        <p>If you appreciate the value of my content, consider making a cryptocurrency donation:</p>
+        <p>BTC Address: 1P4GBec8U8uJ7MEVL1ka6oYkcSZMrz3M7H</p>
+        <p>ETH Address: 0x66f11096a3779189dfc1d41e7453342576079469</p>
+        <p>LTC Address: MQX6cMcGM4Ck5sTjZF8uaPcbEDX7BAmtGW</p>
+        <p>BCH Address: qpfwg92dvray6q9nywr3p9uettc50a709yn74r44lh</p>
+        <div style="display:flex;align-items:center;justify-content:center">
+          <p>Support me on Ko-fi:</p>
+          <a href="https://ko-fi.com/cod3xdev" target="_blank" style="margin-left:10px;margin-top:4px">
+            <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi" style="border:0;width:160px;height:30px">
+          </a>
+        </div>
+        <p>Subscribe to Guilded: <a href="https://www.guilded.gg/Cod3xDev/subscriptions" class="subscribe-button">Subscribe Now</a></p>
+      </div>
     </div>
     <script>
       // JavaScript for updating the progress bar
       const monthlyGoal = 50; // Set your monthly goal here
       let currentAmount = 0; // Update this value with actual donations
+
       // Function to update the progress bar
       function updateProgressBar() {
         const progressBar = document.getElementById("progress-bar");
@@ -121,6 +132,7 @@
         progressBar.style.width = progressPercentage + "%";
         progressBar.innerHTML = progressPercentage.toFixed(2) + "%";
       }
+
       // Example: Update the currentAmount (simulate donations)
       updateProgressBar();
     </script>
