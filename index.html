@@ -1,140 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cod3xBot's Shop</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Helvetica, sans-serif;
-        background: url(https://i.imgur.com/kPbvRGB.png) center/cover no-repeat;
-        color: #fff;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AURA's Shop</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: 'Helvetica', sans-serif;
+				background: url(https://i.imgur.com/aJyBRT9.jpeg) center/cover no-repeat;
+				color: #fff;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background-color: #001a33;
+				/* Dark blue background color */
+			}
 
-      #content {
-        background: rgba(0, 0, 0, .7);
-        padding: 15px;
-        border-radius: 10px;
-        max-width: 600px;
-        width: 100%;
-        box-sizing: border-box;
-      }
+			#content {
+				background: rgba(0, 0, 0, 0.7);
+				padding: 15px;
+				border-radius: 10px;
+				max-width: 600px;
+				width: 100%;
+				box-sizing: border-box;
+			}
 
-      h1 {
-        font-size: 2em;
-        margin-bottom: 15px;
-      }
+			h1 {
+				font-size: 2em;
+				margin-bottom: 15px;
+				color: #fff;
+				/* White text color */
+			}
 
-      p {
-        font-size: 1.1em;
-        margin-bottom: 15px;
-      }
+			p {
+				font-size: 1.1em;
+				margin-bottom: 15px;
+				color: #fff;
+				/* White text color */
+			}
 
-      .donation-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+			.donation-links {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 
-      .join-now-button,
-      .subscribe-button {
-        background-color: #4caf50;
-        color: #fff;
-        padding: 8px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        margin: 8px;
-        font-size: 1em;
-      }
+			.join-now-button,
+			.subscribe-button {
+				background-color: #ff4747;
+				/* Red button color */
+				color: #fff;
+				padding: 8px 15px;
+				text-decoration: none;
+				border-radius: 5px;
+				margin: 8px;
+				font-size: 1em;
+			}
 
-      #goal-progress {
-        margin-top: 15px;
-        width: 100%;
-        background-color: #ddd;
-        border-radius: 5px;
-        overflow: hidden;
-      }
+			#goal-progress {
+				margin-top: 15px;
+				width: 100%;
+				background-color: #ddd;
+				border-radius: 5px;
+				overflow: hidden;
+			}
 
-      #progress-bar {
-        height: 15px;
-        width: 0;
-        background-color: #4caf50;
-        text-align: center;
-        line-height: 15px;
-        color: #fff;
-      }
+			#progress-bar {
+				height: 15px;
+				width: 0;
+				background-color: #ff4747;
+				/* Red progress bar color */
+				text-align: center;
+				line-height: 15px;
+				color: #fff;
+				/* White text color */
+			}
 
-      #total-goal {
-        font-size: 1.1em;
-        margin-top: 8px;
-      }
+			#total-goal {
+				font-size: 1.1em;
+				margin-top: 8px;
+				color: #fff;
+				/* White text color */
+			}
 
-      @media screen and (max-width: 600px) {
-        #content {
-          max-width: 100%;
-          padding: 10px;
-        }
+			#additional-text p {
+				margin-bottom: 8px;
+				color: #fff;
+				/* White text color */
+			}
 
-        h1 {
-          font-size: 1.5em;
-        }
+			#additional-text a {
+				margin-left: 10px;
+				margin-top: 4px;
+				color: #ff4747;
+				/* Red link color */
+			}
 
-        p {
-          font-size: 1em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="content">
-      <h1>Cod3xBot's Shop</h1>
-      <p>Support our cause and make a difference.</p>
-      <div class="donation-links">
-        <a href="https://www.guilded.gg/r/zzEaAA1ObE?i=409GLpQd" class="join-now-button">Join Now</a>
-      </div>
-      <div id="goal-progress">
-        <div id="progress-bar">49.7%</div>
-      </div>
-      <div id="total-goal">Total Goal: ~$55 AUD</div>
+			#additional-text img {
+				border: 0;
+				width: 160px;
+				height: 30px;
+			}
 
-      <div id="additional-text">
-        <p>Please Visit My Guilded Server To Add This To Your Switch</p>
-        <p>If you appreciate the value of my content, consider making a cryptocurrency donation:</p>
-        <p>BTC Address: 1P4GBec8U8uJ7MEVL1ka6oYkcSZMrz3M7H</p>
-        <p>ETH Address: 0x66f11096a3779189dfc1d41e7453342576079469</p>
-        <p>LTC Address: MQX6cMcGM4Ck5sTjZF8uaPcbEDX7BAmtGW</p>
-        <p>BCH Address: qpfwg92dvray6q9nywr3p9uettc50a709yn74r44lh</p>
-        <div style="display:flex;align-items:center;justify-content:center">
-          <p>Support me on Ko-fi:</p>
-          <a href="https://ko-fi.com/cod3xdev" target="_blank" style="margin-left:10px;margin-top:4px">
-            <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi" style="border:0;width:160px;height:30px">
-          </a>
-        </div>
-        <p>Subscribe to Guilded: <a href="https://www.guilded.gg/Cod3xDev/subscriptions" class="subscribe-button">Subscribe Now</a></p>
-      </div>
-    </div>
-    <script>
-      // JavaScript for updating the progress bar
-      const monthlyGoal = 55; // Set your monthly goal here
-      let currentAmount = 27.34; // Update this value with actual donations
+			@media screen and (max-width: 600px) {
+				#content {
+					max-width: 100%;
+					padding: 10px;
+				}
 
-      // Function to update the progress bar
-      function updateProgressBar() {
-        const progressBar = document.getElementById("progress-bar");
-        const progressPercentage = (currentAmount / monthlyGoal) * 100;
-        progressBar.style.width = progressPercentage + "%";
-        progressBar.innerHTML = progressPercentage.toFixed(2) + "%";
-      }
+				h1 {
+					font-size: 1.5em;
+				}
 
-      // Example: Update the currentAmount (simulate donations)
-      updateProgressBar();
-    </script>
-  </body>
+				p {
+					font-size: 1em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<h1>AURA's Shop</h1>
+			<p>Support our cause and make a difference.</p>
+			<div class="donation-links">
+				<a href="https://www.guilded.gg/r/zzEaAA1ObE?i=409GLpQd" class="join-now-button">Join Now</a>
+			</div>
+			<div id="goal-progress">
+				<div id="progress-bar">49.7%</div>
+			</div>
+			<div id="total-goal">Total Goal: ~$55 AUD</div>
+			<div id="additional-text">
+				<p>Please Visit My Guilded Server To Add This To Your Switch</p>
+				<p>If you appreciate the value of my content, consider making a cryptocurrency donation:</p>
+				<p>BTC Address: 1P4GBec8U8uJ7MEVL1ka6oYkcSZMrz3M7H</p>
+				<p>ETH Address: 0x66f11096a3779189dfc1d41e7453342576079469</p>
+				<p>LTC Address: MQX6cMcGM4Ck5sTjZF8uaPcbEDX7BAmtGW</p>
+				<p>BCH Address: qpfwg92dvray6q9nywr3p9uettc50a709yn74r44lh</p>
+				<div style="display:flex;align-items:center;justify-content:center">
+					<p>Support me on Ko-fi:</p>
+					<a href="https://ko-fi.com/cod3xdev" target="_blank">
+						<img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi">
+					</a>
+				</div>
+				<p>Subscribe to Guilded: <a href="https://www.guilded.gg/Cod3xDev/subscriptions" class="subscribe-button">Subscribe Now</a>
+				</p>
+			</div>
+		</div>
+		<script>
+			// JavaScript for updating the progress bar
+			const monthlyGoal = 55; // Set your monthly goal here
+			let currentAmount = 37.34; // Update this value with actual donations
+			// Function to update the progress bar
+			function updateProgressBar() {
+				const progressBar = document.getElementById("progress-bar");
+				const progressPercentage = (currentAmount / monthlyGoal) * 100;
+				progressBar.style.width = progressPercentage + "%";
+				progressBar.innerHTML = progressPercentage.toFixed(2) + "%";
+			}
+			// Example: Update the currentAmount (simulate donations)
+			updateProgressBar();
+		</script>
+	</body>
 </html>
